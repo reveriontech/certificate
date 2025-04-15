@@ -5,7 +5,7 @@ import * as THREE from "three"
 
 function Bubble({ position, scale = 1, color = "#aaccff" }) {
     return (
-        <Float speed={1.5} rotationIntensity={10} floatIntensity={2.5} floatingRange={[-1.5, 1.5]}>
+        <Float speed={1.5} rotationIntensity={15} floatIntensity={2.5} floatingRange={[-1.5, 1.5]}>
         <mesh position={position} scale={scale}>
             <sphereGeometry args={[1, 128, 128]} />
             <meshPhysicalMaterial
