@@ -27,9 +27,8 @@ body {
 	align-items: center;
 	justify-content: center;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
     color: rgba(255, 255, 255, .8);
-    font-family: 'Algerian', sans-serif;
     text-shadow: 1px 1px 5px rgb(2, 152, 72, .5);
     transform: translate(-50%, -50%) scale(1);
     border-radius: 10px;
@@ -66,11 +65,11 @@ body {
 
 .data-form .inputBox {
     position: relative;
-	top: 10px;
+	top: 0px;
 	left: 5%;
     width: 400px;
 	height: 40px;
-    margin: 20px 0;
+    margin: 30px 0;
 	display: flex;
     align-items: center;
     justify-content: center;
@@ -84,8 +83,8 @@ body {
 	border: none;
 	background: transparent;
 	padding: 0 15px;
-	font-size: 12px;
-	color: rgba(0, 0, 0, .2);
+	font-size: 15px;
+	color: rgba(255, 255, 255, 1);
 	text-shadow: 0px 0px 0px rgba(0, 0, 0, .3);
 	box-sizing: border-box;
 	outline: none;
@@ -102,9 +101,16 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.inputBox .error-message {
+    position: absolute;
+    top: 45px;
+	left: 50px;
+    font-size: 11px;
+}
+
 .generate-button {
     position: relative;
-    top: 55px;
+    top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,4 +135,19 @@ body {
 	inset -1px -1px 2px rgba(255,255,255,1),
 	1px 1px 2px rgba(0,0,0,0.10);
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .data-form {
+        transform: translate(-50%, -50%) scale(.9);
+    }
+
+    .data-form .inputBox i {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .data-form .inputBox {
+        left: 0;
+    }
 }
