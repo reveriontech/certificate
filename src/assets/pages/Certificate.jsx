@@ -58,7 +58,7 @@ const Certificate = () => {
                 <div className="certificate-content">
 
                 {/* <img src="/ReverionTop.png" alt="Decorative Header" className="reverion-top"/> */}
-                <img src="/CertificateBG.png" alt="Decorative Header" className="certificate-bg"/>
+                <img src="/cert12.png" alt="Decorative Header" className="certificate-bg"/>
                 
                 <div className="certificate-content">
                     <h1 className="certificate-h1">CERTIFICATE</h1>
@@ -74,7 +74,7 @@ const Certificate = () => {
                     We acknowledge your dedication and commitment to professional growth.
                     </p>
 
-                    <p className='name1'>Rod M. Albores</p> <p className='name2'>Nelson Lumbres</p>
+                    <p className='name1'></p> <p className='name2'></p>
                     
                     <div className="cert-id">
                         <MdOutlineVerified size={20} color="#555" /> Certificate No: {certificateNumber}
